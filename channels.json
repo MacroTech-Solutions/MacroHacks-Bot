@@ -1,0 +1,385 @@
+[
+    {
+        "type": "category",
+        "deleted": false,
+        "id": "710167062256943145",
+        "name": "General",
+        "rawPosition": 2,
+        "parentID": null,
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "guild": "710167059845087274",
+        "createdTimestamp": 1589387421908
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710167064265883688",
+        "name": "general",
+        "rawPosition": 2,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": "710178172573843677",
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589387422387
+    },
+    {
+        "type": "voice",
+        "deleted": false,
+        "id": "710167065184698379",
+        "name": "general",
+        "rawPosition": 0,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "bitrate": 64000,
+        "userLimit": 0,
+        "guild": "710167059845087274",
+        "createdTimestamp": 1589387422606
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710167339416420393",
+        "name": "mod",
+        "rawPosition": 8,
+        "parentID": "710178867070894130",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268"
+        ],
+        "topic": "",
+        "nsfw": false,
+        "lastMessageID": "714880384818479135",
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [
+            "714880384818479135"
+        ],
+        "createdTimestamp": 1589387487988
+    },
+    {
+        "type": "voice",
+        "deleted": false,
+        "id": "710167476184285214",
+        "name": "mod",
+        "rawPosition": 1,
+        "parentID": "710178867070894130",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268"
+        ],
+        "bitrate": 64000,
+        "userLimit": 5,
+        "guild": "710167059845087274",
+        "createdTimestamp": 1589387520596
+    },
+    {
+        "type": "category",
+        "deleted": false,
+        "id": "710178867070894130",
+        "name": "Moderation",
+        "rawPosition": 3,
+        "parentID": null,
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268"
+        ],
+        "guild": "710167059845087274",
+        "createdTimestamp": 1589390236395
+    },
+    {
+        "type": "category",
+        "deleted": false,
+        "id": "710182278025838643",
+        "name": "Verification",
+        "rawPosition": 0,
+        "permissionOverwrites": [],
+        "guild": "710167059845087274",
+        "createdTimestamp": 1589391049630
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710182346640326807",
+        "name": "verification",
+        "rawPosition": 0,
+        "parentID": "710182278025838643",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": "714867041961771008",
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589391065989
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710190283312332980",
+        "name": "bot-test",
+        "rawPosition": 9,
+        "parentID": "710178867070894130",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": "714869029457625118",
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589392958239
+    },
+    {
+        "type": "category",
+        "deleted": false,
+        "id": "710231106196209695",
+        "name": "Important",
+        "rawPosition": 1,
+        "parentID": null,
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "guild": "710167059845087274",
+        "createdTimestamp": 1589402691173
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710231157643673620",
+        "name": "announcements",
+        "rawPosition": 1,
+        "parentID": "710231106196209695",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": null,
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589402703439
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710258502932627536",
+        "name": "projects",
+        "rawPosition": 3,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": null,
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589409223064
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710258529348354121",
+        "name": "off-topic",
+        "rawPosition": 6,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": null,
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589409229362
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710258839097704460",
+        "name": "bios",
+        "rawPosition": 4,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": null,
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589409303212
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710258859960434758",
+        "name": "memes",
+        "rawPosition": 5,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": null,
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589409308186
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710258889719021659",
+        "name": "music",
+        "rawPosition": 7,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": null,
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589409315281
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "710616040601682030",
+        "name": "aws-config",
+        "rawPosition": 11,
+        "parentID": "713767706830307410",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710232306391973938"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": "710616157803118674",
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1589494466687
+    },
+    {
+        "type": "category",
+        "deleted": false,
+        "id": "713767706830307410",
+        "name": "Administrative",
+        "rawPosition": 4,
+        "parentID": null,
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710232306391973938"
+        ],
+        "guild": "710167059845087274",
+        "createdTimestamp": 1590245882471
+    },
+    {
+        "type": "text",
+        "deleted": false,
+        "id": "713767865165021313",
+        "name": "admin",
+        "rawPosition": 10,
+        "parentID": "713767706830307410",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710232306391973938"
+        ],
+        "topic": null,
+        "nsfw": false,
+        "lastMessageID": null,
+        "rateLimitPerUser": 0,
+        "lastPinTimestamp": null,
+        "guild": "710167059845087274",
+        "messages": [],
+        "createdTimestamp": 1590245920221
+    },
+    {
+        "type": "voice",
+        "deleted": false,
+        "id": "713768052537294858",
+        "name": "admin",
+        "rawPosition": 2,
+        "parentID": "713767706830307410",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710232306391973938"
+        ],
+        "bitrate": 64000,
+        "userLimit": 3,
+        "guild": "710167059845087274",
+        "createdTimestamp": 1590245964894
+    },
+    {
+        "type": "voice",
+        "deleted": false,
+        "id": "713769556275101798",
+        "name": "afk",
+        "rawPosition": 3,
+        "parentID": "710167062256943145",
+        "permissionOverwrites": [
+            "710167059845087274",
+            "710167159749214268",
+            "710178968753537045"
+        ],
+        "bitrate": 64000,
+        "userLimit": 0,
+        "guild": "710167059845087274",
+        "createdTimestamp": 1590246323413
+    }
+]

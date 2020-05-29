@@ -1,9 +1,8 @@
-var Discord = require('discord.io');
-var logger = require('winston');
+const Discord = require('discord.js');
 var admin = require('firebase-admin');
-const path = require('path');
 var serviceAccount = require("./macrohacks-macrotech-firebase-adminsdk-ycmff-dc86532e3b.json");
-const PORT = process.env.PORT || 1024;
+var fs = require('fs');
+// const { cli } = require('winston/lib/winston/config');
 
 var app = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -12,43 +11,37 @@ var app = admin.initializeApp({
 
 var database = admin.database();
 
-logger.remove(logger.transports.Console);
-logger.add(new logger.transports.Console, {
-  colorize: true
+const client = new Discord.Client();
+
+client.once('ready', () => {
+  console.log('Ready!');
 });
-logger.level = 'debug';
-// Initialize Discord Bot
-var bot = new Discord.Client({
-  token: "NzEwMTc2NDQ2MjIzNDgzMDIx.XrwpZA.DhUEXWGgQxR1hmrJ2dryAxcaHao",
-  autorun: true
-});
-bot.on('ready', function (evt) {
-  logger.info('Connected');
-});
-bot.on('message', function (user, userID, channelID, message, evt) {
-  // Our bot needs to know if it will execute a command
-  // It will listen for messages that will start with `!`
-  if (message.substring(0, 1) == '!') {
-    var args = message.substring(1).split(' ');
-    var cmd = args[0];
-    args = args.splice(1);
-    if (channelID == "710182346640326807") {
-      switch (cmd) {
-        case 'verify':
-          bot.sendMessage({
-            to: channelID,
-            message: 'Verifying...'
-          });
-          break;
+
+// login to Discord with your app's token
+client.login('NzEwMTc2NDQ2MjIzNDgzMDIx.XrwpZA.DhUEXWGgQxR1hmrJ2dryAxcaHao');
+
+client.on('message', async (message) => {
+  if (message.channel == "710182346640326807") {
+    if (message.content == "!verify") {
+      var userID = (message.author.username + '#' + message.author.discriminator);
+      let myVal = await database.ref("participants").orderByChild('discord').equalTo(userID).once("value");
+      myVal = myVal.val();
+      if (myVal) {
+        for (key in myVal) {
+          message.author.send('Welcome to MacroHacks! Stay tuned in the <#710231157643673620> channel for updates.');
+          message.guild.member(message.author).roles.add('710178968753537045');
+          message.guild.member(message.author).setNickname(myVal[key].name);
+        }
+      } else {
+        message.author.send("It seems like you are not registered for MacroHacks. Please sign up at https://macrohacks.tech. If you need help, please DM <@!374363009121910795>.");
       }
+      message.delete();
+    } else if(message.author.id != "710176446223483021") {
+      message.delete();
     }
-    switch (cmd) {
-      case 'status':
-        bot.sendMessage({
-          to: channelID,
-          message: 'Active'
-        });
-        break;
-    }
+  } else if (message.content.startsWith("!send ") && (message.channel == "713767865165021313" || message.channel == "710190283312332980" || message.channel == "710167339416420393")) {
+    let channelNum = message.content.split(" ")[1].substring(2, message.content.split(" ")[1].length - 1);
+    let myMessage = message.content.substring(message.content.split(" ")[0].length + message.content.split(" ")[1].length + 2);
+    client.channels.cache.get(channelNum).send(myMessage);
   }
 });
